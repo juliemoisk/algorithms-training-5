@@ -1,0 +1,10 @@
+l1 = input()
+s1 = set(map(int, input().split()))
+l2 = input()
+s2 = set(map(int, input().split()))
+l3 = input()
+s3 = set(map(int, input().split()))
+ans = s1 & s2
+merged12 = s1.union(s2)
+ans = ans.union(merged12 & s3)
+print(*sorted(ans))
